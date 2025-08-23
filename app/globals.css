@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove the problematic import */
+/* @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); */
+
+@font-face {
+  font-family: "SamuraiBlast";
+  src: url("/fonts/samurai-blast.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Fonts */
+.pixel-font {
+  font-family: var(--font-pixel), monospace;
+  letter-spacing: -0.05em;
+  line-height: 1.4;
+}
+
+.samurai-font {
+  font-family: "SamuraiBlast", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Pixel noise animation */
+@keyframes pixelNoise {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+/* Typing animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1em;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+/* Smooth page transitions */
+.page-transition-enter {
+  opacity: 0;
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.page-transition-exit {
+  opacity: 1;
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+/* Pixel art scaling */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Retro-futuristic text style */
+.retro-text {
+  font-family: "SamuraiBlast", sans-serif;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Retro glitch text effect */
+.retro-glitch {
+  position: relative;
+  display: inline-block;
+  color: white;
+  mix-blend-mode: screen;
+}
+
+.retro-glitch::before,
+.retro-glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.retro-glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00ea;
+  animation: retro-glitch-1 3s infinite linear alternate-reverse;
+}
+
+.retro-glitch::after {
+  left: -2px;
+  text-shadow: 2px 0 #00eeff;
+  animation: retro-glitch-2 2s infinite linear alternate-reverse;
+}
+
+@keyframes retro-glitch-1 {
+  0%,
+  5%,
+  10% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+  }
+  15%,
+  20% {
+    clip-path: polygon(0 30%, 100% 30%, 100% 40%, 0 40%);
+  }
+  25%,
+  30% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 60%, 0 60%);
+  }
+  35%,
+  40%,
+  45% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+  50%,
+  55%,
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95%,
+  100% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+}
+
+@keyframes retro-glitch-2 {
+  0%,
+  15%,
+  25% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
+  }
+  30%,
+  35% {
+    clip-path: polygon(0 35%, 100% 35%, 100% 45%, 0 45%);
+  }
+  40%,
+  50% {
+    clip-path: polygon(0 55%, 100% 55%, 100% 65%, 0 65%);
+  }
+  65%,
+  70%,
+  75% {
+    clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%);
+  }
+  80%,
+  85%,
+  90%,
+  95%,
+  100% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+}
+
+/* Additional scanline effect for retro feel */
+.retro-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+  background-size: 100% 4px;
+  z-index: 1;
+  pointer-events: none;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Add a flicker effect */
+.retro-text {
+  animation: flicker 5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.8;
+  }
+}
+
