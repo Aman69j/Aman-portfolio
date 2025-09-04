@@ -46,26 +46,26 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Pixel Dungeon",
+      title: "Blender",
       category: "Blender",
       year: "2023",
-      video:"/videos/blender/swordAnimations.mp4",
+      video:"https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032200/CatCharacter_wkrtaj.mp4",
       link: "/projects/pixel-dungeon",
     },
     {
       id: 2,
-      title: "Neon Racer",
+      title: "Blender",
       category: "Blender",
       year: "2022",
-      video:"/videos/blender/Minecarft.mp4",
+      video:"https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032209/swordAnimations_sojmgq.mp4",
       link: "/projects/neon-racer",
     },
     {
       id: 3,
-      title: "Space Odyssey",
+      title: "Blender",
       category: "Blender",
       year: "2021",
-      video:"/videos/blender/earphone.mp4",
+      video:"https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032212/earphone_fxr5mf.mp4",
       link: "/projects/space-odyssey",
     },
   ]
