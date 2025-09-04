@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Install dependencies
         run: pnpm install
       - name: Lint
@@ -25,4 +27,3 @@ jobs:
         run: pnpm build
       - name: Test (if available)
         run: pnpm test || echo "No tests found"
-
