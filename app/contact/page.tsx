@@ -77,7 +77,7 @@ export default function ContactPage() {
             >
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 pixel-font">Contact</h1>
               <p className="text-lg text-gray-400 max-w-2xl">
-                Have a game idea or want to collaborate? Get in touch and let's create something amazing together.
+                Have a game idea or want to collaborate? Get in touch and let&#39;s create something amazing together.
               </p>
             </motion.div>
 
@@ -100,7 +100,7 @@ export default function ContactPage() {
                     className="bg-white/10 rounded-lg p-6 text-center"
                   >
                     <h3 className="text-xl font-medium mb-2 pixel-font">Thank you!</h3>
-                    <p className="text-gray-300">Your message has been sent successfully. I'll get back to you soon.</p>
+                    <p className="text-gray-300">Your message has been sent successfully. I&#39;ll get back to you soon.</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -314,4 +314,3 @@ export default function ContactPage() {
     </div>
   )
 }
-

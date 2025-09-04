@@ -250,7 +250,7 @@ export default function Home() {
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6 md:p-8">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-2 pixel-font">Dragon's Quest</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-2 pixel-font">Dragon&#39;s Quest</h3>
                     <p className="text-gray-300 max-w-xl">
                       An epic open-world RPG with dynamic combat and a branching storyline. Explore vast landscapes,
                       battle mythical creatures, and forge your own legend.
@@ -306,7 +306,7 @@ export default function Home() {
                 About Me
               </h2>
               <p className="text-gray-400 mb-6">
-                With over 10 years of experience in game development, I've crafted unique interactive experiences across
+                With over 10 years of experience in game development, I&#39;ve crafted unique interactive experiences across
                 multiple platforms and genres, from mobile casual games to immersive PC and console titles.
               </p>
               <p className="text-gray-400 mb-8">
@@ -384,4 +384,3 @@ export default function Home() {
     </div>
   )
 }
-

@@ -106,7 +106,7 @@ export default function AboutPage() {
 
                 <div className="space-y-4 text-gray-300">
                   <p>
-                    With over a decade of experience in game development, I've crafted interactive experiences across
+                    With over a decade of experience in game development, I&#39;ve crafted interactive experiences across
                     multiple platforms and genres. My work combines technical expertise with creative design to create
                     games that engage and challenge players.
                   </p>
@@ -232,4 +232,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
