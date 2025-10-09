@@ -306,12 +306,13 @@ export default function Home() {
                 About Me
               </h2>
               <p className="text-gray-400 mb-6">
-                With over 10 years of experience in game development, I&#39;ve crafted unique interactive experiences across
-                multiple platforms and genres, from mobile casual games to immersive PC and console titles.
+                I am an aspiring Game Developer and 3D Artist with a passion for building immersive games and stunning 3D environments. 
+                My core competencies are in game development and 3D modeling utilizing tools like Unreal Engine 5 and Blender.
               </p>
               <p className="text-gray-400 mb-8">
-                My work spans indie projects, AAA titles, and experimental games, each designed with meticulous
-                attention to player experience, game mechanics, and visual aesthetics.
+                My practical experience includes completing freelance commissions for indie game developers, where I managed the full 
+                asset pipeline to create optimized, game-ready assets for Unreal Engine and Unity. In my recent role as a UI/UX Developer intern, 
+                I enhanced my design and collaboration skills by working with developers and cross-functional teams to streamline digital interactions.
               </p>
               <Button
                 asChild

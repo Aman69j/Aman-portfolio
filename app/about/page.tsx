@@ -17,17 +17,17 @@ export default function AboutPage() {
     "Pixel Art",
     "Level Design",
     "Game AI",
-    "Shader Programming",
+    "Shader Designing",
     "Game UI/UX",
-    "Multiplayer Networking",
+    "Multiplayer",
   ]
 
   const experiences = [
     {
-      year: "2020 - Present",
-      position: "Lead Game Developer",
-      company: "Indie Game Studio",
-      description: "Leading development of multiple game projects across various platforms and genres.",
+      year: "Jan 2025 - July 2025",
+      position: "UI/UX Developer - Intern",
+      company: "Hidden Brains",
+      description: "As a UI/UX Developer intern at Hidden Brains, I contributed to design initiatives for an AI accounting product by collaborating with developers to enhance user journeys and optimize interface usability.",
     },
     {
       year: "2017 - 2020",
@@ -106,19 +106,19 @@ export default function AboutPage() {
 
                 <div className="space-y-4 text-gray-300">
                   <p>
-                    With over a decade of experience in game development, I&#39;ve crafted interactive experiences across
-                    multiple platforms and genres. My work combines technical expertise with creative design to create
-                    games that engage and challenge players.
+                    I am a Game Developer and 3D Artist passionate about crafting immersive games and stunning 3D environments. 
+                    My work combines a love for storytelling and game design with technical expertise in Unreal Engine 5 and Blender. 
+                    I have hands-on experience delivering high-quality, game-ready assets for indie developers through freelance commissions.
                   </p>
                   <p>
-                    I began my journey in game development at the age of 16, creating simple games and mods. This early
-                    passion led me to formal studies in Computer Science and Game Design, where I honed my technical
-                    skills while developing my creative vision.
+                    My deep love for storytelling and game design led me to pursue a formal education in Computer Science and Engineering. 
+                    I've honed my skills and creative vision by supplementing my degree with key certifications, including Unreal Engine 5 development, 
+                    Blueprint Essentials from Epic Games, and UX Design from Google.
                   </p>
                   <p>
-                    Today, I collaborate with talented artists, designers, and fellow developers to create games that
-                    push boundaries and deliver memorable experiences. My approach combines solid game mechanics with
-                    compelling narratives and visually striking aesthetics.
+                    I have experience collaborating with developers, cross-functional teams, and clients to bring creative visions to life. 
+                    My goal is to create games that deliver memorable experiences by combining solid gameplay mechanics with compelling narratives 
+                    and striking visuals.
                   </p>
                 </div>
               </motion.div>
