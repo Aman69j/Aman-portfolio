@@ -112,7 +112,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     My deep love for storytelling and game design led me to pursue a formal education in Computer Science and Engineering. 
-                    I've honed my skills and creative vision by supplementing my degree with key certifications, including Unreal Engine 5 development, 
+                    I&apos;ve honed my skills and creative vision by supplementing my degree with key certifications, including Unreal Engine 5 development, 
                     Blueprint Essentials from Epic Games, and UX Design from Google.
                   </p>
                   <p>
