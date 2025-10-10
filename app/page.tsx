@@ -46,23 +46,23 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Blender",
+      title: "Cat Character",
       category: "Blender",
-      year: "2023",
+      year: "2024",
       video: "https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032200/CatCharacter_wkrtaj.mp4",
       link: "/projects/homepage-projects/blender1-homepage",
     },
     {
       id: 2,
-      title: "Blender",
+      title: "Flaming Sword",
       category: "Blender",
-      year: "2022",
+      year: "2024",
       video: "https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032209/swordAnimations_sojmgq.mp4",
       link: "/projects/homepage-projects/blender2-homepage",
     },
     {
       id: 3,
-      title: "Blender",
+      title: "Airpods Product Visualization",
       category: "Blender",
       year: "2021",
       video: "https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032212/earphone_fxr5mf.mp4",

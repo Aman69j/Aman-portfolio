@@ -19,57 +19,51 @@ export default function ProjectDetailPage() {
     {
       id: 1,
       slug: "blender1-homepage",
-      title: "Blender",
-      category: "Blender",
-      year: "2023",
-      platform: "PC, Mobile",
+      title: "Cat Character",
+      category: "3D Character Design / Game Asset",
+      year: "2024",
+      platform: "Blender",
       description:
-        "A procedurally generated dungeon crawler with pixel art aesthetics and challenging roguelike mechanics.",
+        "A 3D stylized cat character designed and modeled in Blender.",
       fullDescription:
-        "Pixel Dungeon is a challenging roguelike RPG with procedurally generated levels, items, and enemies. Each playthrough offers a unique experience as you delve deeper into the dungeon. The game features permadeath mechanics, meaning once your character dies, you'll need to start a new adventure. With dozens of unique items, weapons, and spells to discover, multiple character classes with different playstyles, and challenging boss encounters, Pixel Dungeon offers hundreds of hours of gameplay. The retro pixel art style pays homage to classic dungeon crawlers while adding modern gameplay mechanics and quality-of-life features.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
+        "The project focuses on achieving a cute yet adventurous aesthetic with optimized topology, detailed texturing, and a clean low-poly look suitable for games or animation.",
+      coverImage: "/CatCharacter.jpg",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+//        "/placeholder.svg?height=600&width=800", Future refernce for dimensions if image needed to be added
       ],
       nextProject: "blender2-homepage",
     },
     {
       id: 2,
       slug: "blender2-homepage",
-      title: "Blender",
-      category: "Blender",
-      year: "2023",
-      platform: "PC, Mobile",
+      title: "Flaming Sword",
+      category: "3D Visual Effects3D Visual Effects (VFX) / Prop Design",
+      year: "2024",
+      platform: "Blender",
       description:
-        "A procedurally generated dungeon crawler with pixel art aesthetics and challenging roguelike mechanics.",
+        "A stylized fantasy sword modeled on a display platform, featuring a dynamic fire and smoke simulation (or procedural fire shader) for the blade.",
       fullDescription:
-        "Pixel Dungeon is a challenging roguelike RPG with procedurally generated levels, items, and enemies. Each playthrough offers a unique experience as you delve deeper into the dungeon. The game features permadeath mechanics, meaning once your character dies, you'll need to start a new adventure. With dozens of unique items, weapons, and spells to discover, multiple character classes with different playstyles, and challenging boss encounters, Pixel Dungeon offers hundreds of hours of gameplay. The retro pixel art style pays homage to classic dungeon crawlers while adding modern gameplay mechanics and quality-of-life features.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
+        "The project focuses on integrating realistic/stylized flame visual effects with detailed prop design and rendering a short loop or turntable animation.",
+      coverImage: "/FlamingSword.jpg",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+//        "/placeholder.svg?height=600&width=800", Future refernce for dimensions if image needed to be added
       ],
-      nextProject: "neon-racer",
+      nextProject: "blender3-homepage",
     },
     {
       id: 3,
       slug: "blender3-homepage",
-      title: "Blender",
-      category: "Blender",
-      year: "2023",
-      platform: "PC, Mobile",
+      title: "Airpods Product Visualization",
+      category: "3D Product Modeling / Stylized Motion Graphics",
+      year: "2021",
+      platform: "Blender",
       description:
-        "A procedurally generated dungeon crawler with pixel art aesthetics and challenging roguelike mechanics.",
+        "A project focused on creating a clean, stylized, 3D model of wireless earbuds and their charging case.",
       fullDescription:
-        "Pixel Dungeon is a challenging roguelike RPG with procedurally generated levels, items, and enemies. Each playthrough offers a unique experience as you delve deeper into the dungeon. The game features permadeath mechanics, meaning once your character dies, you'll need to start a new adventure. With dozens of unique items, weapons, and spells to discover, multiple character classes with different playstyles, and challenging boss encounters, Pixel Dungeon offers hundreds of hours of gameplay. The retro pixel art style pays homage to classic dungeon crawlers while adding modern gameplay mechanics and quality-of-life features.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
+        "The work emphasises smooth surfaces, clear forms, and a simplified aesthetic, suitable for motion graphics or brand presentation where the focus is on showcasing product design with a vibrant color palette and dynamic lighting that enhance visual appeal without overwhelming the viewer.",
+      coverImage: "/Airpods.jpg",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+//        "/placeholder.svg?height=600&width=800", Future refernce for dimensions if image needed to be added
       ],
       nextProject: "neon-racer",
     },
@@ -210,7 +204,7 @@ export default function ProjectDetailPage() {
               ))}
             </div>
 
-            {/* Next Project */}
+            {/* Next Project or Back Home */}
             <div className="mt-32 border-t border-white/10 pt-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -220,19 +214,28 @@ export default function ProjectDetailPage() {
                 className="flex flex-col items-center text-center"
               >
                 <span className="text-sm uppercase tracking-widest text-gray-500 mb-4 pixel-font text-xs">
-                  Next Project
+                  {project.title === "Airpods Product Visualization" ? "Back" : "Next Project"}
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-8 pixel-font">
-                  {projects.find((p) => p.slug === project.nextProject)?.title}
-                </h2>
+                {project.title !== "Airpods Product Visualization" && (
+                  <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-8 pixel-font">
+                    {projects.find((p) => p.slug === project.nextProject)?.title}
+                  </h2>
+                )}
                 <Button
                   asChild
                   className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium pixel-font"
                 >
-                  <Link href={`/projects/homepage-projects/${project.nextProject}`}>
-                    View Project
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  {project.title === "Airpods Product Visualization" ? (
+                    <Link href="/">
+                      Home
+                      <ArrowLeft className="ml-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                    </Link>
+                  ) : (
+                    <Link href={`/projects/homepage-projects/${project.nextProject}`}>
+                      View Project
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  )}
                 </Button>
               </motion.div>
             </div>
