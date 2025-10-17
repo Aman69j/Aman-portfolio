@@ -40,7 +40,29 @@ export default function ProjectsIndexPage() {
       year: "2021",
       video: "https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032212/earphone_fxr5mf.mp4",
     },
-    // Main project detail pages (engine not specified yet)
+    //Blender Projects Page Projects
+    {
+      slug: "homepage-projects/blender4-homepage",
+      title: "Sci‑Fi Crate",
+      category: "Blender",
+      year: "2023",
+      video: "",
+    },
+    {
+      slug: "homepage-projects/blender5-homepage",
+      title: "Low‑Poly Forest",
+      category: "Blender",
+      year: "2022",
+      video: "",
+    },
+    {
+      slug: "homepage-projects/blender6-homepage",
+      title: "Stylized Potion Bottles",
+      category: "Blender",
+      year: "2021",
+      video: "",
+    },
+    // Uncategorised Projects only Dargon Quest on the homepage is relevant
     {
       slug: "neon-racer",
       title: "Neon Racer",
@@ -61,6 +83,56 @@ export default function ProjectsIndexPage() {
       category: "Uncategorized",
       year: "2023",
       video: "/placeholder.svg?height=600&width=900",
+    },
+    // Unreal projects
+    {
+      slug: "unreal-sci-fi-hall",
+      title: "UE5 Sci‑Fi Hall",
+      category: "Unreal",
+      year: "2024",
+      video: "",
+    },
+    {
+      slug: "unreal-forest-daylight",
+      title: "UE5 Forest Daylight",
+      category: "Unreal",
+      year: "2024",
+      video: "",
+    },
+    {
+      slug: "unreal-interior-archviz",
+      title: "UE5 Interior ArchViz",
+      category: "Unreal",
+      year: "2023",
+      video: "",
+    },
+    {
+      slug: "unreal-stylized-town",
+      title: "UE5 Stylized Town",
+      category: "Unreal",
+      year: "2023",
+      video: "",
+    },
+    {
+      slug: "unreal-cave-sequence",
+      title: "UE5 Cave Sequence",
+      category: "Unreal",
+      year: "2022",
+      video: "",
+    },
+    {
+      slug: "unreal-vehicle-demo",
+      title: "UE5 Vehicle Demo",
+      category: "Unreal",
+      year: "2022",
+      video: "",
+    },
+    {
+      slug: "unreal-niagara-vfx-pack",
+      title: "UE5 Niagara VFX Pack",
+      category: "Unreal",
+      year: "2022",
+      video: "",
     },
   ]
 

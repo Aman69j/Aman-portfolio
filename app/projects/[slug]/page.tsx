@@ -71,6 +71,119 @@ export default function ProjectDetailPage() {
       ],
       nextProject: "pixel-dungeon",
     },
+    // Unreal category detailed pages
+    {
+      id: 7,
+      slug: "unreal-sci-fi-hall",
+      title: "UE5 Sci‑Fi Hall",
+      category: "Unreal Environment",
+      year: "2024",
+      platform: "Unreal Engine 5",
+      description: "Nanite/ Lumen powered corridor with emissive trims and VFX.",
+      fullDescription:
+        "A cinematic corridor built using modular trimsheets, Nanite meshes and Lumen global illumination. Includes Niagara spark/steam effects and sequencer camera shots.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-forest-daylight",
+    },
+    {
+      id: 8,
+      slug: "unreal-forest-daylight",
+      title: "UE5 Forest Daylight",
+      category: "Unreal Environment",
+      year: "2024",
+      platform: "Unreal Engine 5",
+      description: "Open forest lit with dynamic sky/atmosphere and foliage wind.",
+      fullDescription:
+        "An outdoor scene leveraging virtual shadows, foilage painter, and Lumen sky light for natural daylight rendering.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-interior-archviz",
+    },
+    {
+      id: 9,
+      slug: "unreal-interior-archviz",
+      title: "UE5 Interior ArchViz",
+      category: "Unreal ArchViz",
+      year: "2023",
+      platform: "Unreal Engine 5",
+      description: "High-fidelity interior walkthrough with baked/virtual lighting mix.",
+      fullDescription:
+        "ArchViz sample focused on camera movement, material variants, and post-process volumes for color grading.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-stylized-town",
+    },
+    {
+      id: 10,
+      slug: "unreal-stylized-town",
+      title: "UE5 Stylized Town",
+      category: "Unreal Stylized",
+      year: "2023",
+      platform: "Unreal Engine 5",
+      description: "Toon-shaded town with outline shaders and light-mass settings.",
+      fullDescription:
+        "Uses custom material shaders and post-process outlines for a painterly look, paired with optimized instanced meshes.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-cave-sequence",
+    },
+    {
+      id: 11,
+      slug: "unreal-cave-sequence",
+      title: "UE5 Cave Sequence",
+      category: "Unreal Cinematic",
+      year: "2022",
+      platform: "Unreal Engine 5",
+      description: "Sequencer-based short cinematic in a cave with fog volumes.",
+      fullDescription:
+        "Cinematic sequence showcasing depth, fog, and camera rails with sound cues and timed VFX.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-vehicle-demo",
+    },
+    {
+      id: 12,
+      slug: "unreal-vehicle-demo",
+      title: "UE5 Vehicle Demo",
+      category: "Unreal Gameplay",
+      year: "2022",
+      platform: "Unreal Engine 5",
+      description: "Chaos vehicles demo with tuned suspension and inputs.",
+      fullDescription:
+        "Demonstrates vehicle physics setup, input mapping context, and a basic UI HUD.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-niagara-vfx-pack",
+    },
+    {
+      id: 13,
+      slug: "unreal-niagara-vfx-pack",
+      title: "UE5 Niagara VFX Pack",
+      category: "Unreal VFX",
+      year: "2022",
+      platform: "Unreal Engine 5",
+      description: "Collection of Niagara particle effects and materials.",
+      fullDescription:
+        "Includes fire, smoke, magic bursts and impact effects with material parameter collections for easy tuning.",
+      coverImage: "/placeholder.svg?height=800&width=1200",
+      images: [
+        "/placeholder.svg?height=600&width=800",
+      ],
+      nextProject: "unreal-sci-fi-hall",
+    },
   ]
 
   const project = projects.find((p) => p.slug === slug)
