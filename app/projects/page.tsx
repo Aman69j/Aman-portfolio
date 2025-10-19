@@ -42,21 +42,21 @@ export default function ProjectsIndexPage() {
     },
     //Blender Projects Page Projects
     {
-      slug: "homepage-projects/blender4-homepage",
-      title: "Sci‑Fi Crate",
+      slug: "blender14-projects",
+      title: "Water Splash Effect",
       category: "Blender",
       year: "2023",
-      video: "",
+      video: "https://res.cloudinary.com/dyuhapfwj/video/upload/v1756032220/waterAnimations_xr0itt.mp4",
     },
     {
-      slug: "homepage-projects/blender5-homepage",
+      slug: "blender15-projects",
       title: "Low‑Poly Forest",
       category: "Blender",
       year: "2022",
       video: "",
     },
     {
-      slug: "homepage-projects/blender6-homepage",
+      slug: "blender16-projects",
       title: "Stylized Potion Bottles",
       category: "Blender",
       year: "2021",

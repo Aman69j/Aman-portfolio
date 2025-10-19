@@ -67,48 +67,7 @@ export default function ProjectDetailPage() {
       ],
       nextProject: "blender4-homepage",
     },
-    {
-      id: 4,
-      slug: "blender4-homepage",
-      title: "Sci‑Fi Crate",
-      category: "3D Prop Modeling",
-      year: "2023",
-      platform: "Blender",
-      description: "A hard-surface sci‑fi crate created with bevels, decals, and PBR textures.",
-      fullDescription:
-        "This project explores clean hard-surface workflows in Blender, focusing on chamfers, control loops, and non-destructive modifiers. Materials were authored with metallic/roughness workflows and baked for real-time use.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
-      images: [],
-      nextProject: "blender5-homepage",
-    },
-    {
-      id: 5,
-      slug: "blender5-homepage",
-      title: "Low‑Poly Forest",
-      category: "Stylized Environment",
-      year: "2022",
-      platform: "Blender",
-      description: "A stylized low‑poly forest scene focusing on simple shapes and colors.",
-      fullDescription:
-        "A lightweight environment ideal for mobile/indie games. Emphasis on modular assets, color harmony, and performant scene composition with instancing.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
-      images: [],
-      nextProject: "blender6-homepage",
-    },
-    {
-      id: 6,
-      slug: "blender6-homepage",
-      title: "Stylized Potion Bottles",
-      category: "Stylized Props",
-      year: "2021",
-      platform: "Blender",
-      description: "A set of potion bottles with hand‑painted look and emissive glows.",
-      fullDescription:
-        "Focused on glass shaders, volume color, and rim lighting to achieve a magical look. Includes simple animation-ready topology for corks and liquid levels.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
-      images: [],
-      nextProject: "blender1-homepage",
-    },
+
   ]
 
   const project = projects.find((p) => p.slug === slug)
