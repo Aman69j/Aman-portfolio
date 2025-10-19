@@ -193,7 +193,7 @@ export default function AboutPage() {
                   className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
                 >
                   <Link href="/contact">
-                    Let's Connect
+                    Let&apos;s Connect
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>

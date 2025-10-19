@@ -225,7 +225,7 @@ export default function Home() {
                   variant="outline"
                   className="rounded-full h-12 border-white/30 hover:bg-white/10 text-sm"
                 >
-                  <Link href="/contact">Let's Connect</Link>
+                  <Link href="/contact">Let&apos;s Connect</Link>
                 </Button>
               </div>
             </div>
@@ -338,7 +338,7 @@ export default function Home() {
                   variant="outline"
                   className="rounded-full h-12 border-white/30 hover:bg-white/10 text-sm"
                 >
-                  <Link href="/contact">Let's Connect</Link>
+                  <Link href="/contact">Let&apos;s Connect</Link>
                 </Button>
               </div>
             </div>

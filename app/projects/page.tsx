@@ -17,7 +17,8 @@ export default function ProjectsIndexPage() {
   }
 
   // Known projects from the codebase
-  const allProjects: ProjectCardItem[] = [
+  const allProjects = useMemo<ProjectCardItem[]>(
+    () => [
     // Blender (homepage) projects
     {
       slug: "homepage-projects/blender1-homepage",
@@ -134,7 +135,9 @@ export default function ProjectsIndexPage() {
       year: "2022",
       video: "",
     },
-  ]
+    ],
+    []
+  )
 
   const categories = ["All", "Blender", "Unity", "Unreal"] as const
 
