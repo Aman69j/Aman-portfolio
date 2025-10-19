@@ -3,8 +3,9 @@
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, ArrowRight } from "lucide-react"
 import FilmGrain from "@/components/film-grain"
+import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
   const skills = [
@@ -183,6 +184,19 @@ export default function AboutPage() {
                     </div>
                   </motion.div>
                 ))}
+              </div>
+
+              {/* Experience CTA */}
+              <div className="mt-12 flex justify-center">
+                <Button
+                  asChild
+                  className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
+                >
+                  <Link href="/contact">
+                    Let's Connect
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
               </div>
             </motion.div>
           </div>

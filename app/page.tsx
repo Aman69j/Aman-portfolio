@@ -210,15 +210,24 @@ export default function Home() {
                 Game developer and designer specializing in creating engaging, interactive experiences that captivate
                 and challenge players.
               </p>
-              <Button
-                asChild
-                className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
-              >
-                <Link href="/projects">
-                  View Projects
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+              <div className="flex items-center gap-3 flex-wrap">
+                <Button
+                  asChild
+                  className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
+                >
+                  <Link href="/projects">
+                    View Projects
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full h-12 border-white/30 hover:bg-white/10 text-sm"
+                >
+                  <Link href="/contact">Let's Connect</Link>
+                </Button>
+              </div>
             </div>
           </motion.div>
         </section>
@@ -264,7 +273,7 @@ export default function Home() {
                         Learn More
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Link>
-                    </Button>
+                    </Button> 
                   </div>
                 </div>
               </motion.div>
@@ -314,16 +323,24 @@ export default function Home() {
                 asset pipeline to create optimized, game-ready assets for Unreal Engine and Unity. In my recent role as a UI/UX Developer intern, 
                 I enhanced my design and collaboration skills by working with developers and cross-functional teams to streamline digital interactions.
               </p>
-              <Button
-                asChild
-                variant="outline"
-                className="rounded-full border-white/30 hover:bg-white/10 text-sm pixel-font"
-              >
-                <Link href="/about">
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </Button>
+              <div className="flex items-center gap-3 flex-wrap">
+                <Button
+                  asChild
+                  className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
+                >
+                  <Link href="/about">
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-3 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full h-12 border-white/30 hover:bg-white/10 text-sm"
+                >
+                  <Link href="/contact">Let's Connect</Link>
+                </Button>
+              </div>
             </div>
             <div className="md:w-1/2 aspect-video bg-gray-900 rounded-lg overflow-hidden relative">
               <Image
