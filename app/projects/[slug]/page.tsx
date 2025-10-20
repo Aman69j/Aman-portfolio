@@ -197,7 +197,7 @@ export default function ProjectDetailPage() {
         "The project demonstrates proficiency in Blender's fluid dynamics to create intricate liquid behavior, droplets, and surface interactions, suitable for product visualization or environmental effects.",
       coverImage: "/Water Splash Landscape.jpg",
       images: [],
-      nextProject: "blender5-homepage",
+      nextProject: "blender15-homepage",
     },
     {
       id: 15,
@@ -211,7 +211,7 @@ export default function ProjectDetailPage() {
         "A lightweight environment ideal for mobile/indie games. Emphasis on modular assets, color harmony, and performant scene composition with instancing.",
       coverImage: "/placeholder.svg?height=800&width=1200",
       images: [],
-      nextProject: "blender6-homepage",
+      nextProject: "blender16-homepage",
     },
     {
       id: 16,
@@ -225,7 +225,7 @@ export default function ProjectDetailPage() {
         "Focused on glass shaders, volume color, and rim lighting to achieve a magical look. Includes simple animation-ready topology for corks and liquid levels.",
       coverImage: "/placeholder.svg?height=800&width=1200",
       images: [],
-      nextProject: "blender1-homepage",
+      nextProject: "blender-homepage",
     },
   ]
 
