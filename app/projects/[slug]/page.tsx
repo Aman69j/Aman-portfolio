@@ -225,7 +225,7 @@ export default function ProjectDetailPage() {
         "Focused on glass shaders, volume color, and rim lighting to achieve a magical look. Includes simple animation-ready topology for corks and liquid levels.",
       coverImage: "/placeholder.svg?height=800&width=1200",
       images: [],
-      nextProject: "blender-homepage",
+      nextProject: "/homepage-projects/blender3-homepage",
     },
   ]
 
@@ -383,10 +383,17 @@ export default function ProjectDetailPage() {
                   asChild
                   className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium pixel-font"
                 >
+                 {project.title === "UE5 Niagara VFX Pack" ? (
+                    <Link href="/">
+                      Home
+                      <ArrowLeft className="ml-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                    </Link>
+                  ) : (
                   <Link href={`/projects/${project.nextProject}`}>
                     View Project
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
+                  )}
                 </Button>
               </motion.div>
             </div>
