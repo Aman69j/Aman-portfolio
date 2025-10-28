@@ -2,10 +2,11 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { ArrowLeft, Mail, MapPin, Phone } from "lucide-react"
+import emailjs from '@emailjs/browser'
 import FilmGrain from "@/components/film-grain"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -28,13 +29,26 @@ export default function ContactPage() {
     setFormState((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
+    try {
+      const templateParams = {
+        from_name: formState.name,
+        from_email: formState.email,
+        subject: formState.subject,
+        message: formState.message,
+        to_email: 'amanjitiya69@gmail.com',
+      }
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+
       setIsSubmitted(true)
       setFormState({
         name: "",
@@ -42,7 +56,12 @@ export default function ContactPage() {
         subject: "",
         message: "",
       })
-    }, 1500)
+    } catch (error) {
+      console.error('Error sending email:', error)
+      alert('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
