@@ -343,16 +343,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 aspect-video bg-gray-900 rounded-lg overflow-hidden relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Game development workspace"
+                src="/home-aboutme.jpg"
+                alt="Image"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <span className="text-sm uppercase tracking-widest text-gray-300 pixel-font">
-                  Game Development Process
-                </span>
-              </div>
             </div>
           </motion.div>
         </section>
