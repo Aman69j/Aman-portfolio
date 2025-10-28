@@ -91,7 +91,7 @@ export default function AboutPage() {
                 transition={{ delay: 0.2, duration: 0.8 }}
                 className="relative aspect-[3/4] rounded-lg overflow-hidden"
               >
-                <Image src="/placeholder.svg?height=800&width=600" alt="Portrait" fill className="object-cover" />
+                <Image src="/about-me-picture.jpeg" alt="Portrait" fill className="object-cover" />
               </motion.div>
 
               <motion.div
@@ -122,6 +122,17 @@ export default function AboutPage() {
                     and striking visuals.
                   </p>
                 </div>
+                <div className="mt-12 flex ">
+                <Button
+                  asChild
+                  className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
+                >
+                  <Link href="/contact">
+                    Let&apos;s Connect
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </div>
               </motion.div>
             </div>
 
@@ -214,29 +225,29 @@ export default function AboutPage() {
           <div className="flex gap-8">
             <div className="flex flex-col gap-2">
               <span className="text-xs text-gray-500 uppercase">Email</span>
-              <Link href="mailto:hello@example.com" className="text-sm hover:text-gray-400 transition-colors">
-                hello@example.com
+              <Link href="mailto:amanjitiya69@gmail.com" className="text-sm hover:text-gray-400 transition-colors">
+                amanjitiya69@gmail.com
               </Link>
             </div>
 
             <div className="flex flex-col gap-2">
               <span className="text-xs text-gray-500 uppercase">Follow</span>
               <div className="flex gap-4">
-                <Link
+                {/* <Link
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-gray-400 transition-colors"
                 >
                   Twitter
-                </Link>
+                </Link> */}
                 <Link
-                  href="https://itch.io"
+                  href="https://www.instagram.com/crop_head_10?igsh=eGg1ZDRnNGc2ZXJk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-gray-400 transition-colors"
                 >
-                  Itch.io
+                  Instagram
                 </Link>
               </div>
             </div>

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react"
 import Link from "next/link"
 import FilmGrain from "@/components/film-grain"
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 export default function ProjectsIndexPage() {
   const [activeCategory, setActiveCategory] = useState<"All" | "Blender" | "Unity" | "Unreal">("All")
@@ -217,6 +218,19 @@ export default function ProjectsIndexPage() {
           ))}
         </div>
       </main>
+
+      <div className="mt-12 mb-24 flex justify-center">
+        <Button
+          asChild
+          className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium"
+        >
+        <Link href="/contact">
+          Let&apos;s Connect
+          <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </Link>
+        </Button>
+      </div>
+
 
       <footer className="py-12 px-6 md:px-12 lg:px-24 border-t border-white/10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">

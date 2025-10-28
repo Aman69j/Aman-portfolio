@@ -369,29 +369,29 @@ export default function Home() {
           <div className="flex gap-8">
             <div className="flex flex-col gap-2">
               <span className="text-xs text-gray-500 uppercase">Email</span>
-              <Link href="mailto:hello@example.com" className="text-sm hover:text-gray-400 transition-colors">
-                hello@example.com
+              <Link href="amanjitiya69@gmail.com" className="text-sm hover:text-gray-400 transition-colors">
+                amanjitiya69@gmail.com
               </Link>
             </div>
 
             <div className="flex flex-col gap-2">
               <span className="text-xs text-gray-500 uppercase">Follow</span>
               <div className="flex gap-4">
-                <Link
+                {/* <Link
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-gray-400 transition-colors"
                 >
                   Twitter
-                </Link>
+                </Link> */}
                 <Link
-                  href="https://itch.io"
+                  href="https://www.instagram.com/crop_head_10?igsh=eGg1ZDRnNGc2ZXJk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-gray-400 transition-colors"
                 >
-                  Itch.io
+                  Instagram
                 </Link>
               </div>
             </div>
