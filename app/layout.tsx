@@ -16,7 +16,7 @@ const pixelFont = Press_Start_2P({
 })
 
 export const metadata: Metadata = {
-  title: "Game Developer Portfolio",
+  title: "Aman's Game Dev Portfolio",
   description: "A portfolio showcasing game development and design projects",
     generator: 'v0.dev'
 }
