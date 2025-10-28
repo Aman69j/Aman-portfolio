@@ -8,6 +8,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import FilmGrain from "@/components/film-grain"
 import { Button } from "@/components/ui/button"
+import Home from "@/app/page"
 
 export default function ProjectDetailPage() {
   const params = useParams()
@@ -17,59 +18,18 @@ export default function ProjectDetailPage() {
   // Mock project data - in a real app, this would come from an API or CMS
   const projects = [
     {
-      id: 4,
-      slug: "neon-racer",
-      title: "Neon Racer",
-      category: "Racing Game",
-      year: "2022",
-      platform: "PC, Console",
-      description: "A high-speed futuristic racing game with neon-soaked visuals and a dynamic electronic soundtrack.",
-      fullDescription:
-        "Neon Racer is a high-octane futuristic racing game set in a cyberpunk world. Players compete in anti-gravity vehicles capable of extreme speeds and gravity-defying maneuvers. The game features 12 meticulously designed tracks across 4 distinct environments, each with dynamic weather and time-of-day changes that affect racing conditions. The vehicle customization system allows players to modify both the appearance and performance of their racers, with over 200 unique parts to collect. The online multiplayer mode supports up to 16 players simultaneously, with a robust ranking system and seasonal competitions. The game's visual style combines vibrant neon aesthetics with realistic lighting effects, creating a distinctive and immersive racing experience.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
-      images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-      ],
-      nextProject: "space-odyssey",
-    },
-    {
-      id: 5,
-      slug: "space-odyssey",
-      title: "Space Odyssey",
-      category: "Strategy Game",
-      year: "2021",
-      platform: "PC",
-      description:
-        "A grand strategy game set in space where players build empires, manage resources, and engage in interstellar diplomacy or warfare.",
-      fullDescription:
-        "Space Odyssey is a 4X strategy game (eXplore, eXpand, eXploit, eXterminate) that challenges players to build a galactic civilization from the ground up. Starting with a single planet, players must research technologies, design ships, manage resources, and interact with other civilizations through diplomacy or warfare. The game features a procedurally generated galaxy with unique star systems, planets, and anomalies to discover. The tech tree offers multiple paths to victory, allowing players to focus on scientific advancement, cultural influence, economic dominance, or military conquest. The game's AI adapts to player strategies, providing a challenging experience even for veteran strategy gamers. With its deep systems and emergent storytelling, Space Odyssey offers nearly limitless replayability.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
-      images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-      ],
-      nextProject: "dragons-quest",
-    },
-    {
       id: 6,
-      slug: "dragons-quest",
-      title: "Dragon's Quest",
-      category: "Open-World RPG",
-      year: "2023",
-      platform: "PC, Console",
-      description: "An epic open-world RPG with dynamic combat and a branching storyline set in a vast fantasy realm.",
+      slug: "ai-combat",
+      title: "AI Combat & Core Game System Developmen",
+      category: "Game Programming / UI/UX / AI / Sound",
+      year: "2024",
+      platform: "Unreal Engine 5",
+      description: "A comprehensive freelance development project focused on implementing and polishing core combat, AI, and user interface features.",
       fullDescription:
-        "Dragon's Quest is an immersive open-world RPG set in the vast fantasy realm of Eldoria. Players take on the role of a customizable hero who discovers they have the rare ability to communicate with dragons, the most powerful and feared creatures in the land. The game features a massive open world with diverse biomes, from lush forests and snow-capped mountains to scorching deserts and treacherous swamplands. The combat system combines real-time action with tactical elements, allowing players to switch between direct control and party-based strategy. With over 100 hours of main story content and countless side quests, Dragon's Quest offers a deeply engaging narrative with meaningful choices that affect the game world. The relationship system with companion characters and factions adds another layer of depth, as your decisions shape how others perceive and interact with you throughout your journey.",
-      coverImage: "/placeholder.svg?height=800&width=1200",
-      images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-      ],
-      nextProject: "pixel-dungeon",
+        "The project demonstrates advanced skills in Blueprint Scripting and Gameplay Logic, delivering a production-ready combat experience. Key Features Implemented:UI/UX & Resources Built a dynamic HP Bar and Stamina Bar system to manage player resources. Implemented a functional Item Slot (inventory) UI, and designed the Game End UI (Win/Loss screens) with custom visuals and user experience flow.",
+      coverImage: "/AI-Combat.jpg",
+      images: [],
+      nextProject: "automatic-door",
     },
     // Unreal category detailed pages
     {
@@ -154,7 +114,7 @@ export default function ProjectDetailPage() {
         "Theme & Style A synthesis of Ancient Egyptian architecture and iconography (Pyramids, Hieroglyphs, Sphinx, colossal statues) with the exaggerated scale, vibrant color palette, and fantasy elements of the Disney Aladdin aesthetic.",
       coverImage: "/Aladdin Map.jpeg",
       images: [],
-      nextProject: "unreal-sci-fi-hall",
+      Home: "/app/page.tsx",
     },
     //Project page blender projects 
     {
@@ -169,7 +129,7 @@ export default function ProjectDetailPage() {
         "The project demonstrates proficiency in Blender's fluid dynamics to create intricate liquid behavior, droplets, and surface interactions, suitable for product visualization or environmental effects.",
       coverImage: "/Water Splash Landscape.jpg",
       images: [],
-      nextProject: "blender15-homepage",
+      nextProject: "blender15-projects",
     },
     {
       id: 15,
@@ -183,7 +143,7 @@ export default function ProjectDetailPage() {
         "Designed with a soft, friendly aesthetic, the character features rounded shapes, expressive eyes, and small limbs that add charm and personality. The clean topology and pastel color palette enhance its toy-like appeal, making it suitable for use in animated shorts, mobile games, or branding mascots. Special attention was given to lighting and material setup to achieve a creamy, delicious surface feel.",
       coverImage: "/Ice-Cream Man.jpg",
       images: [],
-      nextProject: "blender16-homepage",
+      nextProject: "blender16-projects",
     },
     {
       id: 16,
@@ -197,7 +157,7 @@ export default function ProjectDetailPage() {
         "The project demonstrates proficiency in rigid body physics or keyframe animation tailored to a cubic style, with simple, vibrant textures.",
       coverImage: "/Minecraft.jpg",
       images: [],
-      nextProject: "/blender17-homepage",
+      nextProject: "/blender17-projects",
     },
     {
       id: 17,
@@ -211,7 +171,7 @@ export default function ProjectDetailPage() {
         "The project demonstrates the use of Blender's shading and simulation tools to create a detailed, magical prop on a simple pedestal.",
       coverImage: "/Flaming Sword.jpg",
       images: [],
-      nextProject: "/blender18-homepage",
+      nextProject: "/blender18-projects",
     },
     {
       id: 18,
@@ -225,7 +185,7 @@ export default function ProjectDetailPage() {
         "The project showcases expertise in three key areas: Dynamic Camera Movement (to convey motion and scale), Ocean Modifier/Wave Simulation (for realistic, wind-driven water), and Rain Visual Effects (for atmospheric drops, surface interaction, and wetness), all contributing to a dramatic, movie-quality scene.",
       coverImage: "/Ocean.jpg",
       images: [],
-      nextProject: "/homepage-projects/blender3-homepage",
+      nextProject: "/ai-combat",
     },
   ]
 
@@ -383,7 +343,7 @@ export default function ProjectDetailPage() {
                   asChild
                   className="group bg-white text-black hover:bg-white/90 rounded-full px-6 py-6 text-sm font-medium pixel-font"
                 >
-                 {project.title === "UE5 Niagara VFX Pack" ? (
+                 {project.title === "'Aladdin' Themed Egyptian Environment" ? (
                     <Link href="/">
                       Home
                       <ArrowLeft className="ml-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />

@@ -254,22 +254,21 @@ export default function Home() {
               >
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
                   <video ref={videoRef} className="w-full h-full object-cover" loop muted playsInline>
-                    <source src="/placeholder.mp4" type="video/mp4" />
+                    <source src="https://res.cloudinary.com/dyuhapfwj/video/upload/v1756035798/soul_like_game_fftzzh.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6 md:p-8">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-2 pixel-font">Dragon&#39;s Quest</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-2 pixel-font">AI Combat & Core Game System Developmen</h3>
                     <p className="text-gray-300 max-w-xl">
-                      An epic open-world RPG with dynamic combat and a branching storyline. Explore vast landscapes,
-                      battle mythical creatures, and forge your own legend.
+                      A comprehensive freelance development project focused on implementing and polishing core combat, AI, and user interface features. 
                     </p>
                     <Button
                       asChild
                       variant="outline"
                       className="mt-4 rounded-full border-white/30 hover:bg-white/10 text-sm"
                     >
-                      <Link href="/projects/dragons-quest">
+                      <Link href="/projects/ai-combat">
                         Learn More
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Link>

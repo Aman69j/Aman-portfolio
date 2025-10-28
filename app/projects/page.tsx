@@ -79,25 +79,11 @@ export default function ProjectsIndexPage() {
     }, 
     // Uncategorised Projects only Dargon Quest on the homepage is relevant
     {
-      slug: "neon-racer",
-      title: "Neon Racer",
+      slug: "ai-combat",
+      title: "AI Combat & Core Game System Developmen",
       category: "Uncategorized",
-      year: "2022",
-      video: "",
-    },
-    {
-      slug: "space-odyssey",
-      title: "Space Odyssey",
-      category: "Uncategorized",
-      year: "2021",
-      video: "/placeholder.svg?height=600&width=900",
-    },
-    {
-      slug: "dragons-quest",
-      title: "Dragon's Quest",
-      category: "Uncategorized",
-      year: "2023",
-      video: "/placeholder.svg?height=600&width=900",
+      year: "2024",
+      video: "https://res.cloudinary.com/dyuhapfwj/video/upload/v1756035798/soul_like_game_fftzzh.mp4",
     },
     // Unreal projects
     {
